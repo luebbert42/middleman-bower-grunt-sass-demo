@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore the build directory
-/build
+/middleman/build
 
 # Ignore cache
 /.sass-cache
@@ -18,3 +18,5 @@
 .DS_Store
 
 .idea/
+
+/node_modules

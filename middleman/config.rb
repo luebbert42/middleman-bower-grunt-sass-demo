@@ -53,6 +53,23 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
+
+# additional sprocket paths
+after_configuration do
+  # bower
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+
+  # images
+  #sprockets.append_path File.join "#{root}", "../assets/img"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
