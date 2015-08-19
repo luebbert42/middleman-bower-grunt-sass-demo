@@ -1,0 +1,19 @@
+{
+  "name": "mysite",
+  "version": "0.0.0",
+  "authors": [
+    "John Doe <john.doe@example.comt>"
+  ],
+  "description": "demo site middleman grunt bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}
